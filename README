@@ -1,7 +1,7 @@
 Probem statement is given in file :  SmartCardRSA.pdf
 Values given in file : mtc3-kitrub-05-smartcard.txt
 
-Used BigDigit Library which is open source software used to handle big numbers.
+Used BigDigit Library which is open source software to handle big numbers.
 Files used from BigDigit Library
 bigd.c
 bigd.h
