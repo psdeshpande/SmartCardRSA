@@ -10,9 +10,18 @@ bigdigit.h
 bigdtypes.h
 
 Written three programs 
--------------------------------------------------------------------------1. smartcard_rsa.c: In this file values of N, e and cipher text are harcoded. They are as per in the given problem statement. I have calculated value of p by mounting brute force attack on dp and by using sage software. Value of p is also hardcoded in this file and it is as per the output of sage software. This program based on N, e, p and cipher text calculates plain text message M using Chinese Remainder Theorem in ASCII string format. 
+-------------------------------------------------------------------------
+1. smartcard_rsa.c: In this file values of N, e and cipher text are harcoded. They are as per in the 
+given problem statement. I have calculated value of p by mounting brute force attack on dp and by using 
+sage software. Value of p is also hardcoded in this file and it is as per the output of sage software. 
+This program based on N, e, p and cipher text calculates plain text message M using Chinese Remainder Theorem 
+in ASCII string format. 
 
-2. rsa.c: In this file values of N, e and cipher txt are hardcoded and they are as per in the given problem statement. I have calculated value of private key d from sage software. Value of d is hardcoded in this file. I calculated plain text message M using normal RSA decruption algorithm and found that using both methods I am getting same plain text message.Also measure time taken by both programs and it clearly indicates decryption algorithm using Chinese Remainder Theorem is faster than decryption algorithm of normal RSA.
+2. rsa.c: In this file values of N, e and cipher txt are hardcoded and they are as per in the given problem statement.
+I have calculated value of private key d from sage software. Value of d is hardcoded in this file. I calculated 
+plain text message M using normal RSA decruption algorithm and found that using both methods I am getting 
+same plain text message.Also measure time taken by both programs and it clearly indicates decryption algorithm 
+using Chinese Remainder Theorem is faster than decryption algorithm of normal RSA.
 
 Output Snippet
 =========================================================================
