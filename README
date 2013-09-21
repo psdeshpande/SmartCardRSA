@@ -27,9 +27,12 @@ Output Snippet
 =========================================================================
 prasad@ubuntu:~/BigDigit$ time ./smartcardRsa
 
-plaintext = 8851286807750333299211247386603716102098212948868340444793378552783877632347545328977211646318917271548352654722645021529478184878282608076120337616897753623132201265317076919921700817605064231027433504627953074164435355725034790625438491781147834836814683959169728790492206
+plaintext = 8851286807750333299211247386603716102098212948868340444793378552783877632347545328977211646318917
+2715483526547226450215294781848782826080761203376168977536231322012653170769199217008176050642310274335046279
+53074164435355725034790625438491781147834836814683959169728790492206
 
-Message in plain text : Artificial intelligence is the intelligence of machines and the branch of computer science that aims to create it.
+Message in plain text : Artificial intelligence is the intelligence of machines and the branch of computer 
+science that aims to create it.
 
 real	0m0.026s
 user	0m0.024s
@@ -39,16 +42,22 @@ sys	0m0.000s
 prasad@ubuntu:~/Downloads/BigDigit$ time ./rsa 
 
 
-plaintext = 8851286807750333299211247386603716102098212948868340444793378552783877632347545328977211646318917271548352654722645021529478184878282608076120337616897753623132201265317076919921700817605064231027433504627953074164435355725034790625438491781147834836814683959169728790492206
+plaintext = 8851286807750333299211247386603716102098212948868340444793378552783877632347545328977211646318917
+2715483526547226450215294781848782826080761203376168977536231322012653170769199217008176050642310274335046279
+53074164435355725034790625438491781147834836814683959169728790492206
 
-Message in plain text : Artificial intelligence is the intelligence of machines and the branch of computer science that aims to create it.
+Message in plain text : Artificial intelligence is the intelligence of machines and the branch of computer 
+science that aims to create it.
 
 real	0m0.134s
 user	0m0.132s
 sys	0m0.000s
 =========================================================================
 
-3. brute_force_rsa.c: This file takes values of N, e and cipher text from command line. It calculates p by mounting brute force attack on dp. This works for small values only. Even after using BigDigit library it takes too much time to calculate large exponention values. Once p and dp are known it finds out plain text message in ASCII and decimal format using Chinese Remainder Theorem.
+3. brute_force_rsa.c: This file takes values of N, e and cipher text from command line. It calculates p by 
+mounting brute force attack on dp. This works for small values only. Even after using BigDigit library it 
+takes too much time to calculate large exponention values. Once p and dp are known it finds out plain text 
+message in ASCII and decimal format using Chinese Remainder Theorem.
 
 
 
